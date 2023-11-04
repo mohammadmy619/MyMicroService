@@ -33,9 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Persistence"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product.Api", "Src\Product\Presentation\Product.Api\Product.Api.csproj", "{6A89EC2D-C77A-42CD-ADDD-6AE6FD56FF08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discount_Infra", "Src\Discount\Discount_Infra\Discount_Infra.csproj", "{1F4C77AA-FF0A-4777-BF6C-18930D29BB7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discount_Infra", "Src\Discount\Discount_Infra\Discount_Infra.csproj", "{1F4C77AA-FF0A-4777-BF6C-18930D29BB7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order_Infra", "Src\Order\Order_Infra\Order_Infra.csproj", "{B8A438F0-1254-4694-AC8B-812D6C34F711}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Order_Infra", "Src\Order\Order_Infra\Order_Infra.csproj", "{B8A438F0-1254-4694-AC8B-812D6C34F711}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -9,11 +9,13 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Persistence.Repositories
 {
-    public class ProductRepository : GenericRepository<Product>, IProductRepository
+    public class ProductRepository : GenericRepository<Product>, Application.Persistence.Contracts.IProductRepository
     {
-     
+
         public ProductRepository(ProductContext context) : base(context)
         {
         }
+
+
     }
 }

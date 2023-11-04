@@ -12,4 +12,8 @@
     <Folder Include="Features\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Domin\Domin.csproj" />
+  </ItemGroup>
+
 </Project>
