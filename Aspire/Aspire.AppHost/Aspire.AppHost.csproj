@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>09c4980e-2b44-4282-a24f-f4e849525e80</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Src\Discount\Discount.Api\Discount.Api.csproj" />
+    <ProjectReference Include="..\..\Src\Order\Order.Api\Order.Api.csproj" />
+    <ProjectReference Include="..\..\Src\Product\Presentation\Product.Api\Product.Api.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.0-preview.6.24214.1" />
+    <PackageReference Include="Aspire.Hosting.Redis" Version="8.0.0-preview.6.24214.1" />
+  </ItemGroup>
+
+</Project>

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Persistence.Contracts
+namespace Domin.contracts
 {
     public interface IGenericRepository<T> where T : BaseEntity
     {

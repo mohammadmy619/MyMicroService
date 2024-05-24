@@ -1,9 +1,9 @@
-﻿using Application.Persistence.Contracts;
-using Infrastructure.Persistence.Repositories;
+﻿using Infrastructure.Persistence.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
+using Domin.contracts;
 
 namespace Infrastructure.Persistence
 {

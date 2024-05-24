@@ -1,4 +1,4 @@
-﻿using Application.Persistence.Contracts;
+﻿using Domin.contracts;
 using Domin.Common;
 using Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
@@ -14,9 +14,9 @@ namespace Infrastructure.Persistence.Repositories
     {
         private readonly ProductContext _context;
 
-        public GenericRepository(ProductContext context)
+        public GenericRepository( )
         {
-            _context = context;
+            _context = new ProductContext();
         }
         public async Task<T> Add(T entity)
         {
