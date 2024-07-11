@@ -7,9 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\" />
-    <Folder Include="Exceptions\" />
-    <Folder Include="Features\" />
+    <Compile Remove="DTOs\**" />
+    <Compile Remove="Exceptions\**" />
+    <Compile Remove="Features\**" />
+    <EmbeddedResource Remove="DTOs\**" />
+    <EmbeddedResource Remove="Exceptions\**" />
+    <EmbeddedResource Remove="Features\**" />
+    <None Remove="DTOs\**" />
+    <None Remove="Exceptions\**" />
+    <None Remove="Features\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Persistence\" />
   </ItemGroup>
 
