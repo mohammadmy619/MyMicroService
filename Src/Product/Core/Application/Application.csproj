@@ -10,16 +10,19 @@
     <Compile Remove="DTOs\**" />
     <Compile Remove="Exceptions\**" />
     <Compile Remove="Features\**" />
+    <Compile Remove="Persistence\**" />
     <EmbeddedResource Remove="DTOs\**" />
     <EmbeddedResource Remove="Exceptions\**" />
     <EmbeddedResource Remove="Features\**" />
+    <EmbeddedResource Remove="Persistence\**" />
     <None Remove="DTOs\**" />
     <None Remove="Exceptions\**" />
     <None Remove="Features\**" />
+    <None Remove="Persistence\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Persistence\" />
+    <PackageReference Include="MediatR" Version="12.3.0" />
   </ItemGroup>
 
   <ItemGroup>

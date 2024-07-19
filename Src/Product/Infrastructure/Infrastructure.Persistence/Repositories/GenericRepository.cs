@@ -47,6 +47,11 @@ namespace Infrastructure.Persistence.Repositories
             return await _context.Set<T>().ToListAsync();
         }
 
+        public IQueryable<T> GetQuery()
+        {
+           return _context.Set<T>().AsQueryable();
+        }
+
         public async Task Update(T entity)
         {
             _context.Entry(entity).State = EntityState.Modified;

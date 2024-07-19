@@ -13,7 +13,7 @@ namespace Domin.Entites
         public string Name { get; set; }
         public string description { get; set; }
         public string CategoryName { get; set; }
-        public string price { get; set; }
+        public decimal price { get; set; }
         public string ImageName { get; set; }
         public ProductStatus Status { get; set; }
 

@@ -12,7 +12,7 @@ builder.Services.AddEndpoints();
 
 builder.Services.AddSwaggerGen();
 
-//builder.Services.ConfigurePersistenceServices(builder.Configuration);
+builder.Services.ConfigurePersistenceServices(builder.Configuration);
 
 
 builder.Services.ConfigureCors();

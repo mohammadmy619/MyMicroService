@@ -14,7 +14,7 @@ namespace Infrastructure.Persistence
         {
             services.AddDbContext<ProductContext>(options =>
             {
-                options.UseSqlServer(configuration
+                options.UseNpgsql(configuration
                     .GetConnectionString("ApplicationDbContext"));
             });
 
