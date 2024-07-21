@@ -1,5 +1,5 @@
 ﻿namespace Product.Api.Endpoints.GetProducts
 {
-    public record GetProductRequest([FromRoute(Name = "Product-id")] string ProductId);
+    public record GetProductRequest([FromRoute(Name = "ProductId")] string ProductId);
    
 }

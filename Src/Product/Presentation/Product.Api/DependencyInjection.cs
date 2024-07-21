@@ -7,26 +7,26 @@ namespace Product.Api;
 
 public static class DependencyInjection
 {
-    //private readonly static Assembly[] Assemblies = AppDomain.CurrentDomain.GetAssemblies();
+    private readonly static Assembly[] Assemblies = AppDomain.CurrentDomain.GetAssemblies();
 
-    //public static IServiceCollection ConfigureMapster(this IServiceCollection services)
-    //{
-    //    var typeAdapterConfig = TypeAdapterConfig.GlobalSettings;
-    //    typeAdapterConfig.Scan(Assemblies);
+    public static IServiceCollection ConfigureMapster(this IServiceCollection services)
+    {
+        var typeAdapterConfig = TypeAdapterConfig.GlobalSettings;
+        typeAdapterConfig.Scan(Assemblies);
 
-    //    services.AddSingleton(typeAdapterConfig);
-    //    services.AddScoped<IMapper, ServiceMapper>();
+        services.AddSingleton(typeAdapterConfig);
+        services.AddScoped<IMapper, ServiceMapper>();
 
-    //    return services;
-    //}
+        return services;
+    }
 
-    //public static IServiceCollection ConfigureValidator(this IServiceCollection services)
-    //{
-    //    services.AddValidatorsFromAssemblies(Assemblies);
+    public static IServiceCollection ConfigureValidator(this IServiceCollection services)
+    {
+        services.AddValidatorsFromAssemblies(Assemblies);
 
-    //    return services;
-    //} 
-    
+        return services;
+    }
+
     public static IServiceCollection ConfigureCors(this IServiceCollection services)
     {
         services.AddCors(options =>

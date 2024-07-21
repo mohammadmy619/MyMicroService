@@ -10,6 +10,6 @@ namespace Infrastructure.Persistence.Repositories
 {
     public class ProductRepository : GenericRepository<Product>, IProductRepository
     {
-  
+      
     }
 }

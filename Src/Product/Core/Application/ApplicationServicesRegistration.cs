@@ -1,12 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Application
+﻿namespace Application
 {
-    public class ApplicationServicesRegistration
+    public static class DependencyInjection
     {
+        public static IServiceCollection ApplicationServicesRegistration(this IServiceCollection services, IConfiguration configuration)
+        {
+
+
+            var application = typeof(IAssemblyMarker);
+
+            services.AddMediatR(configure =>
+            {
+                configure.RegisterServicesFromAssembly(application.Assembly);
+            });
+
+
+            return services;
+        }
     }
 }

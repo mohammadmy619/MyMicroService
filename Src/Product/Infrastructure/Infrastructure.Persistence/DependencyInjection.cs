@@ -4,10 +4,11 @@ using Microsoft.Extensions.Configuration;
 using Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 using Domin.contracts;
+using Domin.Entites;
 
 namespace Infrastructure.Persistence
 {
-    public static class PersistenceServicesRegistration
+    public static class DependencyInjection
     {
         public static IServiceCollection ConfigurePersistenceServices(this IServiceCollection services,
             IConfiguration configuration)
@@ -19,8 +20,9 @@ namespace Infrastructure.Persistence
             });
 
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddScoped<IProductRepository, ProductRepository>();
 
-          
+
 
             return services;
         }

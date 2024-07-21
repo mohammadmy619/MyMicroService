@@ -43,6 +43,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aspire.AppHost", "Aspire\As
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aspire.ServiceDefaults", "Aspire\Aspire.ServiceDefaults\Aspire.ServiceDefaults.csproj", "{5186D458-5387-413D-84E1-1B38F3DFD618}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{90CC67D7-6FBD-4D23-9380-A6A06BD68FA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "Src\BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{9D78F500-9A6D-46CE-9B42-4600A5BD3024}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,10 @@ Global
 		{5186D458-5387-413D-84E1-1B38F3DFD618}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5186D458-5387-413D-84E1-1B38F3DFD618}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5186D458-5387-413D-84E1-1B38F3DFD618}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D78F500-9A6D-46CE-9B42-4600A5BD3024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D78F500-9A6D-46CE-9B42-4600A5BD3024}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D78F500-9A6D-46CE-9B42-4600A5BD3024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D78F500-9A6D-46CE-9B42-4600A5BD3024}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -116,6 +124,8 @@ Global
 		{8052B13F-2D59-4D91-BD10-A048162A7063} = {2FBEDA99-82AC-4722-B35E-BC41CA00AC26}
 		{21AE797F-6204-4A4C-9660-C52560637463} = {8052B13F-2D59-4D91-BD10-A048162A7063}
 		{5186D458-5387-413D-84E1-1B38F3DFD618} = {8052B13F-2D59-4D91-BD10-A048162A7063}
+		{90CC67D7-6FBD-4D23-9380-A6A06BD68FA8} = {2FBEDA99-82AC-4722-B35E-BC41CA00AC26}
+		{9D78F500-9A6D-46CE-9B42-4600A5BD3024} = {90CC67D7-6FBD-4D23-9380-A6A06BD68FA8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F306889D-F780-4E83-A568-9411B5399292}

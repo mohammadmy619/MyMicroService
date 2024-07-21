@@ -14,7 +14,7 @@ namespace Infrastructure.Persistence.Repositories
     {
         private readonly ProductContext _context;
 
-        public GenericRepository( )
+        protected GenericRepository()
         {
             _context = new ProductContext();
         }
@@ -44,12 +44,13 @@ namespace Infrastructure.Persistence.Repositories
 
         public async Task<IReadOnlyList<T>> GetAll()
         {
+            var res = await _context.Product.ToListAsync();
             return await _context.Set<T>().ToListAsync();
         }
 
         public IQueryable<T> GetQuery()
         {
-           return _context.Set<T>().AsQueryable();
+           return this._context.Set<T>().AsQueryable();
         }
 
         public async Task Update(T entity)

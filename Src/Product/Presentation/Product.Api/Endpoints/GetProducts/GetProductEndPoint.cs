@@ -1,4 +1,5 @@
-﻿using MapsterMapper;
+﻿using Application.Product.GetProduct;
+using MapsterMapper;
 using MassTransit.Mediator;
 using MediatR;
 using Microsoft.AspNetCore.Http.HttpResults;
@@ -12,15 +13,18 @@ namespace Product.Api.Endpoints.GetProducts
     {
         public void MapEndpoint(IEndpointRouteBuilder app)
         {
-            app.MapGet("/GetProduct/", async([AsParameters] GetProductRequest request,
-            IMapper mapper,
+            app.MapGet("/GetProduct/{ProductId}", async ([AsParameters] GetProductRequest request,
+                IMapper mapper,
                 MediatR.IMediator mediator,
-                CancellationToken cancellationToken ) =>
+                CancellationToken cancellationToken) =>
             {
-             
+                var command = mapper.Map<GetProductQuery>(request);
 
-                return "mmmmm";
-            }).Validator<GetProductRequestValidator>();
+                var result = await mediator.Send(command, cancellationToken);
+
+                return mapper.Map<GetProductResponse>(result);
+
+            }).Validator<GetProductRequest>();
         }
     }
 }

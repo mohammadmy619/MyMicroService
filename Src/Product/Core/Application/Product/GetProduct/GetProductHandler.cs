@@ -1,9 +1,6 @@
 ﻿using Domin.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace Application.Product.GetProduct
 {
@@ -17,7 +14,16 @@ namespace Application.Product.GetProduct
 
         public async Task<GetProductQueryResponse> Handle(GetProductQuery request, CancellationToken cancellationToken)
         {
-            var GetProduct =  _Productrepository.GetQuery().Where(s => s.IsDelete == false && s.Status = ProductStatus.Active && s.Id == request.Id)
+
+            var GetProduct =await _Productrepository.GetQuery()
+                .Where(s => s.IsDelete == false && s.Status == ProductStatus.Active && s.Id == request.Id).FirstOrDefaultAsync();
+
+            if (GetProduct is null)
+            {
+                throw new NotFoundProductException();
+            }
+
+            return (GetProductQueryResponse)GetProduct;
         }
-    }
+}
 }

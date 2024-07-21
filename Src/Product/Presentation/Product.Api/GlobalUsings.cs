@@ -10,8 +10,11 @@ global using MapsterMapper;
 global using MediatR;
 global using FluentValidation;
 
-// solution
 
+// solution
+global using Product.Api;
+global using Application;
+global using Product.Api.ErrorHandling;
 global using Application.ApplicationServices;
 global using Infrastructure.Persistence;
 
