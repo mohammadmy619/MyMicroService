@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Product.Api.Abstractions;
 using Product.Api.Filters;
 
-namespace Product.Api.Endpoints.GetProducts
+namespace Product.Api.Endpoints.GetProduct
 {
     public class GetProductEndPoint : IEndpoint
     {

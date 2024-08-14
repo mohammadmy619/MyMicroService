@@ -8,5 +8,5 @@ global using Microsoft.Extensions.DependencyInjection;
 global using MediatR;
 
 // solution
-global using Domin.Entites;
+global using Domain.Entites;
 global using BuildingBlocks.Domain;

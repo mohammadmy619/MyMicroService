@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domin.Common
+namespace Domain.Enums
 {
-    public class BaseEntity
+    public enum ProductStatus
     {
-        public long Id { get; set; }
-
-        public bool IsDelete { get; set; }
+        Active,
+        Inactive,
 
     }
 }

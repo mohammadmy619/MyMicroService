@@ -3,8 +3,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
-using Domin.contracts;
-using Domin.Entites;
+using Domain.contracts;
+using Domain.Entites;
 
 namespace Infrastructure.Persistence
 {

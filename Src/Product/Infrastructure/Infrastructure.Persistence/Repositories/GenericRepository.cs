@@ -1,5 +1,5 @@
-﻿using Domin.contracts;
-using Domin.Common;
+﻿using Domain.contracts;
+using Domain.Common;
 using Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 using System;

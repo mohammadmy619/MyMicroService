@@ -1,14 +1,14 @@
-﻿using Domin.Common;
-using Domin.Enums;
+﻿using Domain.Common;
+using Domain.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domin.Entites
+namespace Domain.Entites
 {
-    public class Product:BaseEntity
+    public class Product: BaseEntity
     {
         public string Name { get; set; }
         public string description { get; set; }

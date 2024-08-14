@@ -1,4 +1,4 @@
-﻿using Domin.Entites;
+﻿using Domain.Entites;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Persistence.Context
